@@ -2,10 +2,12 @@ Package.describe({
     summary: "Font Awesome stylesheets in SCSS format"
 });
 
-Package.on_use(function (api) {
-    api.use(["scss"]);
+Package.onUse(function (api) {
+    api.versionsFrom('0.9.0');
+    
+    api.use(["fourseven:scss"]);
 
-    api.add_files([
+    api.addFiles([
         "assets/fonts/fontawesome-webfont.eot",
         "assets/fonts/fontawesome-webfont.svg",
         "assets/fonts/fontawesome-webfont.ttf",
